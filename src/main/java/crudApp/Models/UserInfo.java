@@ -18,8 +18,11 @@ public class UserInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    @Column(name = "user")
     private String name;
+    @Column(name = "login")
     private String login;
+    @Column(name = "password")
     private String password;
 
 
